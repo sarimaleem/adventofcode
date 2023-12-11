@@ -31,4 +31,5 @@ def find_first_z(start):
 
 starts = [x for x in adj.keys() if x.endswith("A")]
 firsts = list(map(lambda x: find_first_z(x), starts))
+print(firsts)
 print(math.lcm(*firsts))
